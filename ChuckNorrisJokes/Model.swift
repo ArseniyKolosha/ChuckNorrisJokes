@@ -49,3 +49,4 @@ func addJokeToFavorites(newJoke: String)  {
     jokes.append(newJoke)
     
 }
+

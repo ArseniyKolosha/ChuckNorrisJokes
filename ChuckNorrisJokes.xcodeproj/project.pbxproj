@@ -13,6 +13,7 @@
 		EA37202B21820AE9002D51A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA37202A21820AE9002D51A6 /* Assets.xcassets */; };
 		EA37202E21820AE9002D51A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA37202C21820AE9002D51A6 /* LaunchScreen.storyboard */; };
 		EA3720362182104E002D51A6 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3720352182104E002D51A6 /* Model.swift */; };
+		EA37203821862548002D51A6 /* FavoritesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA37203721862548002D51A6 /* FavoritesController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		EA37202D21820AE9002D51A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA37202F21820AE9002D51A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA3720352182104E002D51A6 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		EA37203721862548002D51A6 /* FavoritesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				EA37202321820AE7002D51A6 /* AppDelegate.swift */,
 				EA3720352182104E002D51A6 /* Model.swift */,
 				EA37202521820AE7002D51A6 /* ViewController.swift */,
+				EA37203721862548002D51A6 /* FavoritesController.swift */,
 				EA37202721820AE7002D51A6 /* Main.storyboard */,
 				EA37202A21820AE9002D51A6 /* Assets.xcassets */,
 				EA37202C21820AE9002D51A6 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				EA3720362182104E002D51A6 /* Model.swift in Sources */,
 				EA37202621820AE7002D51A6 /* ViewController.swift in Sources */,
 				EA37202421820AE7002D51A6 /* AppDelegate.swift in Sources */,
+				EA37203821862548002D51A6 /* FavoritesController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
