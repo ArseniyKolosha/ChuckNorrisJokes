@@ -28,12 +28,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRF-vi-C0i">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRF-vi-C0i">
                                 <rect key="frame" x="133" y="531" width="109" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Add to favorites"/>
+                                <connections>
+                                    <action selector="pushToFavorites:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4OK-lo-Eh5"/>
+                                </connections>
                             </button>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="pvm-yl-ZLm">
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="pvm-yl-ZLm">
                                 <rect key="frame" x="339" y="80" width="20" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </activityIndicatorView>
@@ -42,11 +45,23 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="CxH-3X-Ffw">
-                        <barButtonItem key="leftBarButtonItem" systemItem="action" id="Tyq-3z-Mxg"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="Thn-Wg-aJU"/>
+                        <barButtonItem key="leftBarButtonItem" enabled="NO" systemItem="action" id="Tyq-3z-Mxg">
+                            <connections>
+                                <action selector="pushShareAction:" destination="BYZ-38-t0r" id="BHp-Oz-oLU"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="Thn-Wg-aJU">
+                            <connections>
+                                <action selector="pushRefreshAction:" destination="BYZ-38-t0r" id="Y7r-cg-gFC"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="addToFavoritesButton" destination="rRF-vi-C0i" id="jd0-fu-JKK"/>
+                        <outlet property="indicator" destination="pvm-yl-ZLm" id="307-DR-nT2"/>
                         <outlet property="jokeLabel" destination="acL-up-yx3" id="j9f-nX-KMk"/>
+                        <outlet property="refreshButton" destination="Thn-Wg-aJU" id="95L-7g-8eJ"/>
+                        <outlet property="shareButton" destination="Tyq-3z-Mxg" id="B98-OK-2Xb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

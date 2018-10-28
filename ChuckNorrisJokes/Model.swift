@@ -8,18 +8,44 @@
 
 import Foundation
 
-func getRandomJoke() -> String {
+func getRandomJoke(block: (String) -> Void) {
     
     let url = URL(string: "http://api.icndb.com/jokes/random")!
     do {
         let dataJson =  try Data(contentsOf: url)
         let jsonDictionary = try JSONSerialization.jsonObject(with: dataJson, options: JSONSerialization.ReadingOptions.allowFragments) as! NSDictionary
         let value = jsonDictionary.object(forKey: "value")  as! NSDictionary
-        return value.object(forKey: "joke") as! String
         
+        
+        block(value.object(forKey: "joke") as! String)
+        return
     } catch {
         print(error)
     }
     
-    return ""
+    block("")
+}
+
+var jokes: [String]  {
+    set {
+        UserDefaults.standard.set(newValue, forKey: "jokes")
+        UserDefaults.standard.synchronize()
+    }
+    get {
+        if let array = UserDefaults.standard.array(forKey:  "jokes"){
+            return array as! [String]
+        } else {
+       return []
+        }
+    }
+}
+
+func addJokeToFavorites(newJoke: String)  {
+    for j in jokes {
+        if j == newJoke{
+            return
+        }
+    }
+    jokes.append(newJoke)
+    
 }
