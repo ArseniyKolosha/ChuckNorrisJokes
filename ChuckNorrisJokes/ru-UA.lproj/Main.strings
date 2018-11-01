@@ -1,0 +1,18 @@
+
+/* Class = "UITabBarItem"; title = "Favorites"; ObjectID = "8z3-4t-QWn"; */
+"8z3-4t-QWn.title" = "Favorites";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "Go4-XS-Ch9"; */
+"Go4-XS-Ch9.text" = "Title";
+
+/* Class = "UILabel"; text = "Push refresh button"; ObjectID = "acL-up-yx3"; */
+"acL-up-yx3.text" = "Push refresh button";
+
+/* Class = "UIButton"; normalTitle = "Add to favorites"; ObjectID = "rRF-vi-C0i"; */
+"rRF-vi-C0i.normalTitle" = "Add to favorites";
+
+/* Class = "UITabBarItem"; title = "RandomJoke"; ObjectID = "rak-RW-6bM"; */
+"rak-RW-6bM.title" = "RandomJoke";
+
+/* Class = "UINavigationItem"; title = "Favorites"; ObjectID = "udf-g7-JmW"; */
+"udf-g7-JmW.title" = "Favorites";

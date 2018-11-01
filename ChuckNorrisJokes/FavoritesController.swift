@@ -35,6 +35,7 @@ class FavoritesController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CelliD", for: indexPath)
 
         cell.textLabel?.text = jokes[indexPath.row]
+        cell.imageView?.image = UIImage(named: "tab2")
 
         return cell
     }

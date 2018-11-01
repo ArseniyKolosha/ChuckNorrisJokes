@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,21 +18,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C9Q-d0-wUf">
-                                <rect key="frame" x="2" y="64" width="373" height="549"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Chuck" translatesAutoresizingMaskIntoConstraints="NO" id="C9Q-d0-wUf">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Push refresh button" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.25" translatesAutoresizingMaskIntoConstraints="NO" id="acL-up-yx3">
-                                <rect key="frame" x="16" y="34" width="343" height="443"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRF-vi-C0i">
-                                <rect key="frame" x="133" y="531" width="109" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Add to favorites"/>
+                            <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRF-vi-C0i">
+                                <rect key="frame" x="133" y="558" width="109" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Add to favorites">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="pushToFavorites:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4OK-lo-Eh5"/>
                                 </connections>
@@ -40,8 +35,26 @@
                                 <rect key="frame" x="339" y="80" width="20" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Push refresh button" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.25" translatesAutoresizingMaskIntoConstraints="NO" id="acL-up-yx3">
+                                <rect key="frame" x="10" y="326.5" width="355" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="C9Q-d0-wUf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8Wg-SI-49d"/>
+                            <constraint firstItem="acL-up-yx3" firstAttribute="centerX" secondItem="C9Q-d0-wUf" secondAttribute="centerX" id="Haq-jg-TJE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="acL-up-yx3" secondAttribute="trailing" constant="10" id="Js0-7t-RRX"/>
+                            <constraint firstItem="C9Q-d0-wUf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Lcl-oM-gcW"/>
+                            <constraint firstItem="rRF-vi-C0i" firstAttribute="centerX" secondItem="C9Q-d0-wUf" secondAttribute="centerX" id="PkH-g9-lIR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="rRF-vi-C0i" secondAttribute="bottom" constant="30" id="YvU-YY-Gio"/>
+                            <constraint firstItem="C9Q-d0-wUf" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="cal-6g-9Ke"/>
+                            <constraint firstItem="acL-up-yx3" firstAttribute="centerY" secondItem="C9Q-d0-wUf" secondAttribute="centerY" id="gqO-eg-E1G"/>
+                            <constraint firstItem="acL-up-yx3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="kDL-VH-cRD"/>
+                            <constraint firstItem="C9Q-d0-wUf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="txr-VL-5bQ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="CxH-3X-Ffw">
@@ -110,7 +123,7 @@
         <scene sceneID="Gtd-1e-caZ">
             <objects>
                 <navigationController id="sNS-vT-ihn" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Favorites" id="8z3-4t-QWn"/>
+                    <tabBarItem key="tabBarItem" title="Favorites" image="tab2" selectedImage="tab2" id="8z3-4t-QWn"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XI9-0R-Eya">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -146,7 +159,7 @@
         <scene sceneID="VLm-yp-rLy">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Bnb-Fu-Ueb" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="RandomJoke" id="rak-RW-6bM"/>
+                    <tabBarItem key="tabBarItem" title="RandomJoke" image="tab1" selectedImage="tab1" id="rak-RW-6bM"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Usa-hu-GE2">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -162,4 +175,9 @@
             <point key="canvasLocation" x="1076" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Chuck" width="1024" height="1024"/>
+        <image name="tab1" width="25" height="25"/>
+        <image name="tab2" width="25" height="25"/>
+    </resources>
 </document>
